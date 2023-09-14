@@ -16,6 +16,7 @@
 //
 const std = @import("std");
 
-fn main() void {
+// I made it public I'm a genius
+pub fn main() void {
     std.debug.print("Hello world!\n", .{});
 }

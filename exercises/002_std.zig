@@ -11,7 +11,12 @@
 // Please complete the import below:
 //
 
-??? = @import("std");
+// Compiling 002_std.zig...
+//Checking 002_std.zig...
+//PASSED:
+//Standard Library.
+//LFG
+const std = @import("std");
 
 pub fn main() void {
     std.debug.print("Standard Library.\n", .{});

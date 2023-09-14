@@ -9,12 +9,17 @@ const std = @import("std");
 
 const NumError = error{IllegalNumber};
 
-pub fn main() void {
+// zig is fucking amazing.
+pub fn main() !void {
     const stdout = std.io.getStdOut().writer();
 
-    const my_num: u32 = getNumber();
-
-    try stdout.print("my_num={}\n", .{my_num});
+    const my_num = getNumber();
+    if (my_num) |value| {
+        try stdout.print("my_num={}\n", .{value});
+    } else |err| switch (err) {
+        NumError.IllegalNumber => try stdout.print("my_num={}\n", .{42}),
+        else => unreachable,
+    }
 }
 
 // This function is obviously weird and non-functional. But you will not be changing it for this quiz.

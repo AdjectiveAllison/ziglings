@@ -53,10 +53,13 @@ const Character = struct {
 };
 
 pub fn main() void {
+    //var old_wise_man = Character{ .class = Class.bard, .gold = 3, .experience = 9999999 };
+
     var mighty_krodor = Character{
         .class = Class.wizard,
         .gold = 10000,
         .experience = 2340,
+        //.mentor = &old_wise_man,
     };
 
     var glorp = Character{ // Glorp!
@@ -68,7 +71,7 @@ pub fn main() void {
 
     // FIX ME!
     // Please pass Glorp to printCharacter():
-    printCharacter(???);
+    printCharacter(&glorp);
 }
 
 // Note how this function's "c" parameter is a pointer to a Character struct.

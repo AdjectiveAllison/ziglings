@@ -19,7 +19,8 @@ const std = @import("std");
 const MyNumberError = error{TooSmall};
 
 pub fn main() void {
-    var my_number: ??? = 5;
+    // I like this actually
+    var my_number: MyNumberError!i8 = 5;
 
     // Looks like my_number will need to either store a number OR
     // an error. Can you set the type correctly above?
