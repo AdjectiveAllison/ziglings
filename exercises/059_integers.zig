@@ -19,10 +19,17 @@
 const print = @import("std").debug.print;
 
 pub fn main() void {
+    //const z = 'Z'; // ASCII value of Z
+    //const i = 'i';
+    //const g = 'g';
+    //print("Octal: {o}\n", .{z});
+    //print("Binary: {b}\n", .{i});
+    //print("Hexadecimal: {x}\n", .{g});
+
     const zig = [_]u8{
-        0o131, // octal
-        0b1101000, // binary
-        0x66, // hex
+        0o132, // octal
+        0b1101001, // binary
+        0x67, // hex
     };
 
     print("{s} is cool.\n", .{zig});

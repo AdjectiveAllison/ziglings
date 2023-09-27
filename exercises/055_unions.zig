@@ -13,7 +13,7 @@
 //         large: u64,
 //     };
 //
-// The syntax looks just like a struct, but a Foo can only hold a
+// The syntax looks just like a struct, but a union can only hold a
 // small OR a medium OR a large value. Once a field becomes
 // active, the other inactive fields cannot be accessed. To
 // change active fields, assign a whole new instance:
@@ -59,8 +59,8 @@ pub fn main() void {
     std.debug.print("Insect report! ", .{});
 
     // Oops! We've made a mistake here.
-    printInsect(ant, AntOrBee.c);
-    printInsect(bee, AntOrBee.c);
+    printInsect(ant, AntOrBee.a);
+    printInsect(bee, AntOrBee.b);
 
     std.debug.print("\n", .{});
 }
