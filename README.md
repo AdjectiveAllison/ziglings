@@ -1,5 +1,13 @@
 # Ziglings
 
+## ⚠️ Attention! Ziglings has moved to Codeberg!
+
+Check out our handy new URL: https://ziglings.org
+
+Or visit the repo directly at: https://codeberg.org/ziglings/exercises
+
+***
+
 Welcome to Ziglings! This project contains a series of tiny
 broken programs (and one nasty surprise).  By fixing them, you'll
 learn how to read and write [Zig](https://ziglang.org/) code.
@@ -51,8 +59,8 @@ $ zig version
 Clone this repository with Git:
 
 ```
-$ git clone https://github.com/ratfactor/ziglings
-$ cd ziglings
+$ git clone https://ziglings.org
+$ cd ziglings.org
 ```
 
 Then run `zig build` and follow the instructions to begin!
